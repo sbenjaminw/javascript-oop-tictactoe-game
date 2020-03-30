@@ -1,4 +1,3 @@
-
 	//	The logic for tile click 
 	class TileLogic {
 		
@@ -31,19 +30,16 @@
 							
 							board.UpdateTile(tile);
 							
-							//	Could put this into separate class 
 							if(turnController.currentTurn == turnController.player1){
 								
 								document.getElementById(this.id).childNodes[0].classList = "";
 								document.getElementById(this.id).childNodes[0].classList.add("blueCounter");
-							
 							} 
 							
 							if(turnController.currentTurn == turnController.player2){
 								
 								document.getElementById(this.id).childNodes[0].classList = "";
 								document.getElementById(this.id).childNodes[0].classList.add("redCounter");
-							
 							}
 							
 							victoryCheck.CheckForVictory(board, turnController.currentTurn);
