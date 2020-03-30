@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link type="text/css" rel="stylesheet"  href="./css/style.css" />
+	
+    <title>Tic Tac Toe || Sam Wheel </title>
+	
+  </head>
+  <body>
+  
+	<!--	The main explainer of the game. 	-->
+	<div class="jumbotron">
+		<h1>Welcome to Tic-Tac-Toe!</h1>
+		<p>Also known as "noughts and crosses", this goal of this game is to get 
+		 three of your side (noughts or crosses) in a row in this 3 x 3 grid.</p>		
+	</div>
+	
+	<!--	The game control panel.		-->
+	<div id="gameControls">
+		
+		<!--	Contains the controls of the game.	-->
+		<div id="controlContainer">
+			<div>
+				<p id="sideIndicator">Side: NEUTRAL</p>
+			</div>
+			<div>
+				<button id="btnStart">Start</button>
+			</div>
+		</div>
+		
+		<!--	The container of the game.	-->
+		<div id="gameContainer">
+		
+			<!--	The game itself.	-->
+			<table id="theGame">
+				<tr id="row1">
+					<td id="row1col1" data-row="1" data-col="1"><span>N</span></td>
+					<td id="row1col2" data-row="1" data-col="2"><span>N</span></td>
+					<td id="row1col3" data-row="1" data-col="3"><span>N</span></td>
+				</tr>
+				<tr id="row2">
+					<td id="row2col1" data-row="2" data-col="1"><span>N</span></td>
+					<td id="row2col2" data-row="2" data-col="2"><span>N</span></td>
+					<td id="row2col3" data-row="2" data-col="3"><span>N</span></td>
+				</tr>
+				<tr id="row3">
+					<td id="row3col1" data-row="3" data-col="1"><span>N</span></td>
+					<td id="row3col2" data-row="3" data-col="2"><span>N</span></td>
+					<td id="row3col3" data-row="3" data-col="3"><span>N</span></td>
+				</tr>
+			</table>
+			
+		</div>
+		
+	</div>
+	
+	<footer>
+		<p>&copy; 2020 Sam Wheel</p>
+	</footer>
+	
+	<script src="./js/gamestate.js"></script>
+	<script src="./js/victorycheck.js"></script>
+	<script src="./js/turncontroller.js"></script>
+	<script src="./js/tilelogic.js"></script>
+	<script src="./js/tile.js"></script>
+	<script src="./js/board.js"></script>
+	<script src="./js/init.js"></script>
+	
+  </body>
+</html>
