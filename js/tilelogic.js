@@ -7,9 +7,6 @@
 			
 			let tds = document.getElementsByTagName("td");
 			
-			//	The context of self, for the closure
-			let cntxt = this;
-			
 			//	Loops through the tds an then adds a click method to it 
 			for(let a = 0; a < tds.length; a++){
 				
@@ -34,6 +31,7 @@
 							
 							board.UpdateTile(tile);
 							
+							//	Could put this into separate class 
 							if(turnController.currentTurn == turnController.player1){
 								
 								document.getElementById(this.id).childNodes[0].classList = "";
