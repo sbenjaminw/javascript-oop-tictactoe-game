@@ -1,0 +1,140 @@
+
+	html, body {
+		position: absolute;
+		width: 100%;
+		left: 0; top: 0;
+		margin: 0;
+		font-size: 18px;
+		font-family: "Tahoma", sans-serif;
+	}
+	
+	.jumbotron {
+		padding: 5%;
+		background-color: #8be4f9;
+	}
+	
+	#controlContainer {
+		background-color: #c0bdbd;
+	}
+	
+	button {
+		font-size: 1em;
+		background-color: #8be4f9;
+		border-style: solid;
+		border-color: #000000;
+		border-width: 1px;
+	}
+	
+	h1, h2, h3, h4 {
+		text-align: center;
+	}
+	
+	footer {
+		padding: 5%;
+		text-align: center;
+	}
+	
+	#gameContainer {
+		overflow: scroll;
+	}
+	
+	table {
+		width: 100%;
+	}
+	
+	td {
+		height: 50px;
+		width: 50px;
+		text-align: center;
+		background-color: yellow;
+	}
+	
+	.redCounter {
+		background-color: red;
+		font-size: 1em;
+		color: black;
+		padding: 2%;
+	}
+	
+	.blueCounter {
+		background-color: blue;
+		font-size: 1em;
+		color: white;
+		padding: 2%;
+	}
+	
+	.neutralCounter {
+		background-color: yellow;
+		font-size: 1em;
+		color: black;
+		padding: 2%;
+	}
+	
+	@media screen and (max-width: 400px) and (min-width: 300px){
+		
+		.jumbotron {
+			background-color: #8be4f9;
+		}
+		
+		#controlContainer {
+			background-color: #c0bdbd;
+			padding: 5%;
+		}
+		
+		button {
+			padding: 5%;
+		}
+		
+	}
+	
+	@media screen and (max-width: 600px) and (min-width: 400px){
+		
+		.jumbotron {
+			background-color: #8be4f9;
+		}
+		
+		#controlContainer {
+			background-color: #c0bdbd;
+			padding: 10%;
+		}
+		
+		button {
+			padding: 10%;
+		}
+		
+	}
+	
+	@media screen and (max-width: 800px) and (min-width: 600px){
+		
+		.jumbotron {
+			background-color: #8be4f9;
+		}
+		
+		#controlContainer {
+			background-color: #c0bdbd;
+			padding: 15%;
+		}
+		
+		button {
+			padding: 15%;
+		}
+		
+	}
+	
+	@media screen and (max-width: 1024px) and (min-width: 800px){
+		
+		.jumbotron {
+			background-color: #8be4f9;
+		}
+		
+		#controlContainer {
+			background-color: #c0bdbd;
+			padding: 20%;
+		}
+		
+		button {
+			padding: 20%;
+		}
+		
+	}
+	
